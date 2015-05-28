@@ -6,9 +6,10 @@
   "dependencies": {
     "grunt": "*",
     "grunt-contrib-watch": "*",
-    "grunt-sass": "^0.18.0",
+    "grunt-sass": "*",
     "grunt-contrib-cssmin" : "*",
-    "node-bourbon":"*"
+    "node-bourbon":"*",
+    "node-neat":"*"
   },
   "devDependencies": {},
   "scripts": {

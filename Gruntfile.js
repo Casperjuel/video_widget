@@ -7,12 +7,7 @@ module.exports = function(grunt) {
         },
         options: {
           sourceMap: true,
-          includePaths: [
-            require('node-bourbon').includePaths,
-            './bower_components/color-scale',
-            './bower_components/type-rhythm-scale',
-            './bower_components/rwd-toolkit'
-          ]
+          includePaths: require('node-neat').includePaths
         }
       }
     },
@@ -20,9 +15,9 @@ module.exports = function(grunt) {
       target: {
         files: [{
           expand: true,
-          cwd: 'css',
+          cwd: 'stylesheets',
           src: ['*.css', '!*.min.css'],
-          dest: 'css',
+          dest: 'stylesheets',
           ext: '.min.css'
         }]
       }
@@ -30,7 +25,9 @@ module.exports = function(grunt) {
     watch: {
       source: {
         files: ['scss/**/*.scss', 'views/**/*.jade'],
-        tasks: ['sass','cssmin'],
+        // tasks: ['sass','cssmin'],
+        tasks: ['sass'],
+
       }
     }
   });
