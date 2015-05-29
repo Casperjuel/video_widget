@@ -52,9 +52,7 @@ $phone-width: 500px;
       bottom: 0;
       left: 50%;
       top: 50%;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
+      @include transform(translateX(-50%) translateY(-50%));
     }
   }
 

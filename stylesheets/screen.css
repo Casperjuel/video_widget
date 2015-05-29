@@ -72,7 +72,9 @@ body {
       left: 50%;
       top: 50%;
       -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%); }
   .video_wrapper .text-wrapper {
     display: table;
